@@ -22,7 +22,7 @@ git clone https://github.com/Yirade/Ai-chat
 This website is built using HTML, CSS, and JavaScript. It uses [Bootstrap](https://getbootstrap.com/) for the layout and [Three Dots](https://github.com/nzbin/three-dots) for the loading animation.
 
 
-## :speech_bubble: Using the Chatbot
+## :speech_balloon: Using the Chatbot
 
 To send a message to the chatbot, simply type it into the input field and press enter or click the send button. The chatbot will generate a response and display it in the chat window.
 
