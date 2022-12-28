@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "openai": "^3.1.0"
+  },
+  "name": "ai-chat",
+  "version": "1.0.0",
+  "description": "An Ai chat in bootstrap",
+  "main": "chat-cron.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yirade/Ai-chat.git"
+  },
+  "author": "Yirade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yirade/Ai-chat/issues"
+  },
+  "homepage": "https://github.com/Yirade/Ai-chat#readme"
+}

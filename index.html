@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<!-- palette https://colorhunt.co/palette/404258474e6850577a6b728e -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+#input {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+#rectangle {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 110px;
+  background-color: #252525;
+  box-shadow: 0 6px 15px 0 rgba(225, 225, 225, 0.19);
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: calc(100vh - 155px); /* Altezza della chat pari all'altezza della viewport meno l'altezza della barra di ricerca */
+  background-color: rgba(225, 225, 255, 0.05);
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.chat-bubble {
+  border-radius: 16px;
+  margin: 10px;
+  padding: 15px;
+  max-width: 25ch; /* 25 caratteri */
+  word-break: normal;/*break-all;*/ /* permette ai messaggi lunghi di andare a capo */
+  display: flex;
+  align-items: center; /* allinea gli elementi all'interno della bubble sulla linea mediana */
+  justify-content: center; /* centra gli elementi all'interno della bubble sulla linea mediana */
+}
+@media screen and (min-width: 768px) {
+  .chat-bubble {
+    max-width: 150ch; /* 150 caratteri */
+    display: flex;
+  flex-direction: column;
+  }
+}
+
+.user-bubble {
+  background-color: #2E2E2E;
+  color: #F5F3FF;
+  align-self: flex-start;
+}
+
+.bot-bubble {
+  background-color: #A37AFE;
+  color: #F5F3FF;
+  align-self: flex-end;
+}
+body {
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-moz-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-ms-scrollbar {
+  width: 0;
+  height: 0;
+}
+#usersm {
+  order: -1;
+  align-self: flex-start;
+}
+pre {
+  color : #F5F3FF;
+}
+
+</style>
+  </head>
+  <body style="background-color: #121212;">
+
+  <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid my-1">
+    <span class="navbar-brand mb-0 h1 text-white" style="">Chat-AI</span>
+  </div>
+</nav>
+
+  <div class="chat mx-3">
+  <div class="chat-bubble bot-bubble">
+    <span>Ciao! Sono il tuo assistente virtuale e sono qui per aiutarti a ottenere le informazioni di cui hai bisogno. Qual è il motivo della tua visita oggi?</span>
+  </div>
+</div>
+
+
+  <div class="container d-flex align-items-center justify-content-center my-2" id="input">
+  <form class="form-inline d-flex flex-wrap w-100">
+    <input type="text" style="background-color: rgba(225, 225, 255, 0.07);" class="form-control text-white col-8 col-md-8 mx-1 w-100" placeholder="Search...">
+    <button type="submit" style="background-color: rgba(225, 225, 255, 0.07); border-color: rgba(225, 225, 255, 0.07);" class="btn btn-primary col-3 col-md-3 mx-1 w-100">Cerca</button>
+    
+    <div class="container d-flex align-items-center justify-content-center my-1">
+        <p class="my-1" style="color: rgba(225, 225, 255, 0.25);">Chat-AI, Created by Yirade</p>
+    </div>
+  </form>
+  
+</div>
+<div id="rectangle">
+</div>
+<script src="chat-cron.js"></script>
+  </body>
+</html>
