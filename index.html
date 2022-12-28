@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
-<!-- palette https://colorhunt.co/palette/404258474e6850577a6b728e -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="dots.css">
     <style>
 #input {
   position: fixed;
@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-  height: 110px;
+  height: 100px;
   background-color: #252525;
   box-shadow: 0 6px 15px 0 rgba(225, 225, 225, 0.19);
 }
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: calc(100vh - 155px); /* Altezza della chat pari all'altezza della viewport meno l'altezza della barra di ricerca */
+  height: calc(100vh - 155px);
   background-color: rgba(225, 225, 255, 0.05);
   border-radius: 14px;
   padding: 15px;
@@ -38,15 +38,15 @@
   border-radius: 16px;
   margin: 10px;
   padding: 15px;
-  max-width: 25ch; /* 25 caratteri */
-  word-break: normal;/*break-all;*/ /* permette ai messaggi lunghi di andare a capo */
+  max-width: 25ch;
+  word-break: normal;
   display: flex;
-  align-items: center; /* allinea gli elementi all'interno della bubble sulla linea mediana */
-  justify-content: center; /* centra gli elementi all'interno della bubble sulla linea mediana */
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .chat-bubble {
-    max-width: 150ch; /* 150 caratteri */
+    max-width: 150ch;
     display: flex;
   flex-direction: column;
   }
@@ -119,5 +119,6 @@ pre {
 <div id="rectangle">
 </div>
 <script src="chat-cron.js"></script>
+<script src="dots.js"></script>
   </body>
 </html>

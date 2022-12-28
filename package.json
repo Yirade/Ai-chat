@@ -1,12 +1,14 @@
 {
   "dependencies": {
-    "openai": "^3.1.0"
+    "clipboard": "^2.0.11",
+    "openai": "^3.1.0",
+    "three-dots": "^0.3.2",
+    "transformer-js": "^0.0.9"
   },
   "name": "ai-chat",
   "version": "1.0.0",
   "description": "An Ai chat in bootstrap",
   "main": "chat-cron.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
