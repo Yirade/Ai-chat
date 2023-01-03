@@ -19,7 +19,7 @@ git clone https://github.com/Yirade/Ai-chat
 
 ## :computer: Tech Stack
 
-This website is built using HTML, CSS, and JavaScript. It uses [Bootstrap](https://getbootstrap.com/) for the layout and [Three Dots](https://github.com/nzbin/three-dots) for the loading animation.
+This website is built using HTML, CSS, and JavaScript. It uses [Bootstrap](https://getbootstrap.com/) for the layout.
 
 
 ## :speech_balloon: Using the Chatbot
