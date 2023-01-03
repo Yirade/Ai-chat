@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Chat-AI</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="dots.css">
     <style>
@@ -87,6 +87,18 @@ body {
 pre {
   color : #F5F3FF;
 }
+.loading {
+  display: none;
+}
+pre {
+  display: flex;
+  align-items: center;
+  white-space: pre-wrap;  /* Forcing the content to wrap */
+  overflow-wrap: break-word;  /* Forcing long words to break */
+  
+}
+
+
 
 </style>
   </head>
@@ -95,12 +107,19 @@ pre {
   <nav class="navbar bg-body-tertiary">
   <div class="container-fluid my-1">
     <span class="navbar-brand mb-0 h1 text-white" style="">Chat-AI</span>
+    <div class="loading">
+      <div class="spinner-grow" role="status">
+      <span class="sr-only">Loading...</span>
+      </div>
   </div>
 </nav>
 
   <div class="chat mx-3">
   <div class="chat-bubble bot-bubble">
     <span>Hello! I am your virtual assistant and I am here to help you get the information you need. What is the reason for your visit today?</span>
+  </div>
+
+
   </div>
 </div>
 
